@@ -2,7 +2,8 @@ import socket
 from sqlite3 import connect
 import sys
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #socket.AF_INET is the Internet address family for IPv4. 
+#SOCK_STREAM is the socket type for TCP, the protocol that will be used to transport messages in the network.
 print("Socket successfully created")
 port = 8090
 s.bind(('', port))
